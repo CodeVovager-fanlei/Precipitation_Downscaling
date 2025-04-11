@@ -1,8 +1,4 @@
-
-
-
-
-=======
+<<<<<<< HEAD
 # 基于注意力的黄土高原降水降尺度系统 (V1.0)
 
 该仓库包含了 **基于注意力的黄土高原降水降尺度系统V1.0** 的代码和模型。该系统使用深度学习模型进行高分辨率区域降水预测，特别为中国黄土高原地区设计。
@@ -56,8 +52,3 @@ python spatial distribution of precipitation.py
 ~~~
 
 ...
-
-
-
->>>>>>> 5cedb22eae3e02674b61b736363a52d29d77631a
-# Attention-Driven-Precipitation-Downscaling
