@@ -16,7 +16,7 @@ train_x_scaled, test_x_scaled = standardize_dataset(train_x, test_x)
 input_shape = tensor_x.shape[1:]
 output_shape = tensor_y.shape[1:]
 cnnModel = RRDBLap(15)
-cnnModel.load_state_dict(torch.load('model_parameter/ACMix_Model_best.pth'))
+cnnModel.load_state_dict(torch.load('model_parameter/ResLapv3_bicubic_Model_best.pth'))
 
 cnnModel.eval()
 with torch.no_grad():
