@@ -3,7 +3,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 from utils.util import BernoulliGammaLoss
 from utils.data_process import getdata, split_data, standardize_dataset, train_val_split, prepare_data
-from ResLapV3 import ResLap
+from ResLapV3 import RRDBLap
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 tensor_x, tensor_y = getdata()
