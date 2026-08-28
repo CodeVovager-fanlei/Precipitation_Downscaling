@@ -11,7 +11,7 @@ input_shape = tensor_x.shape[1:]
 output_shape = tensor_y.shape[1:]
 val_ratio = 0.2
 
-model = ResLap(15).to(device)
+model = RRDBLap(15).to(device)
 for i in range(5):
     print(f'第{i}折')
     start_time = '2001-01-01'
