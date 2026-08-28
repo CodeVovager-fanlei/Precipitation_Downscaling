@@ -159,7 +159,7 @@ class RRDBLap(nn.Module):
         # self.up3 = nn.Upsample(size=(100, 159), mode='bilinear', align_corners=False)
 
     def forward(self, x):
-        x1 = self.conv1(x)
+        x1 = F.relu(self.conv1(x))
         F0 = self.conv_up(x1)
 
         x1 = self.rdbs[0](x1)
