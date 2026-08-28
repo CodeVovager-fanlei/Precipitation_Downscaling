@@ -2,7 +2,8 @@ import torch
 from torch import nn
 from torch.nn import init as init
 from torch.nn.modules.batchnorm import _BatchNorm
-from model.Fusion import CGAFusion
+from Fusion import CGAFusion
+import torch.nn.functional as F
 
 """
 
