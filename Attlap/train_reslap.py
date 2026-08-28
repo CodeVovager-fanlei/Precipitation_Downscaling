@@ -23,9 +23,9 @@ for i in range(5):
     train_x, val_x, train_y, val_y = train_val_split(train_x_scaled, train_y, ratio=val_ratio, k_fold=True, index=i)
 
     train_dataset, val_dataset, test_dataset = prepare_data(train_x, train_y, val_x, val_y, test_x_scaled, test_y)
-    train_loader = DataLoader(train_dataset, batch_size=100, shuffle=True)
-    val_loader = DataLoader(val_dataset, batch_size=100, shuffle=False)
-    test_loader = DataLoader(test_dataset, batch_size=100, shuffle=False)
+    train_loader = DataLoader(train_dataset, batch_size=128, shuffle=True)
+    val_loader = DataLoader(val_dataset, batch_size=128, shuffle=False)
+    test_loader = DataLoader(test_dataset, batch_size=128, shuffle=False)
 
     num_epochs = 1000
     learning_rate = 0.0001
